@@ -8,7 +8,7 @@ contract DeadmansSwitch {
     uint public inactivityLimit = 10; 
 
     constructor(address payable _backupAddress) {
-        owner = msg.sender; // The deployer of the contract is the owner
+        owner = msg.sender; 
         backupAddress = _backupAddress; 
         lastAliveBlock = block.number; 
     }
